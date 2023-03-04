@@ -1,0 +1,111 @@
+# Repixture - armor
+3d_armor/3d_armor_boots_bronze.png,armor/armor_boots_bronze.png
+3d_armor/3d_armor_inv_boots_bronze.png,armor/armor_boots_bronze_inventory.png
+3d_armor/3d_armor_boots_steel.png,armor/armor_boots_steel.png
+3d_armor/3d_armor_inv_boots_steel.png,armor/armor_boots_steel_inventory.png
+3d_armor/3d_armor_boots_wood.png,armor/armor_boots_wood.png
+3d_armor/3d_armor_inv_boots_wood.png,armor/armor_boots_wood_inventory.png
+3d_armor/3d_armor_chestplate_bronze.png,armor/armor_chestplate_bronze.png
+3d_armor/3d_armor_inv_chestplate_bronze.png,armor/armor_chestplate_bronze_inventory.png
+3d_armor/3d_armor_chestplate_steel.png,armor/armor_chestplate_steel.png
+3d_armor/3d_armor_inv_chestplate_steel.png,armor/armor_chestplate_steel_inventory.png
+3d_armor/3d_armor_chestplate_wood.png,armor/armor_chestplate_wood.png
+3d_armor/3d_armor_inv_chestplate_wood.png,armor/armor_chestplate_wood_inventory.png
+3d_armor/3d_armor_helmet_bronze.png,armor/armor_helmet_bronze.png
+3d_armor/3d_armor_inv_helmet_bronze.png,armor/armor_helmet_bronze_inventory.png
+3d_armor/3d_armor_helmet_steel.png,armor/armor_helmet_steel.png
+3d_armor/3d_armor_inv_helmet_steel.png,armor/armor_helmet_steel_inventory.png
+3d_armor/3d_armor_helmet_wood.png,armor/armor_helmet_wood.png
+3d_armor/3d_armor_inv_helmet_wood.png,armor/armor_helmet_wood_inventory.png
+
+# Repixture - default
+default/default_tool_bronzeaxe.png,default/default_axe_bronze.png
+default/default_tool_steelaxe.png,default/default_axe_steel.png
+default/default_tool_stoneaxe.png,default/default_axe_stone.png
+default/default_tool_woodaxe.png,default/default_axe_wood.png
+default/default_tool_steelsword.png,default/default_broadsword.png
+default/default_bronze_block.png,default/default_block_bronze.png
+default/default_coal_block.png,default/default_block_coal.png
+default/default_steel_block.png,default/default_block_steel.png
+default/default_chest_side.png,default/default_chest_sides.png
+default/default_cobble.png,default/default_cobbles.png
+default/default_sandstone_block.png,default/default_compressed_sandstone.png
+default/default_sandstone_block.png,default/default_compressed_sandstone_top.png
+default/default_dry_grass_3.png,default/default_dry_grass_clump.png
+default/default_fern_1.png,default/default_fern.png
+default/default_fern_1.png,default/default_fern_inventory.png
+fire/fire_flint_steel.png,default/default_flint_and_steel.png
+default/default_furnace_side.png,default/default_furnace_sides.png
+default/default_glass.png,default/default_glass_frame.png
+default/default_grass_3.png,default/default_grass_clump.png
+default/default_grass_4.png,default/default_grass_clump_tall.png
+default/default_bronze_ingot.png,default/default_ingot_bronze.png
+default/default_copper_ingot.png,default/default_ingot_copper.png
+default/default_steel_ingot.png,default/default_ingot_steel.png
+default/default_tin_ingot.png,default/default_ingot_tin.png
+default/default_ladder_wood.png,default/default_ladder_inventory.png
+moretrees/moretrees_birch_leaves.png,default/default_leaves_birch.png
+moretrees/moretrees_oak_leaves.png,default/default_leaves_oak.png
+default/default_coal_lump.png,default/default_lump_coal.png
+default/default_copper_lump.png,default/default_lump_copper.png
+default/default_iron_lump.png,default/default_lump_iron.png
+default/default_tin_lump.png,default/default_lump_tin.png
+default/default_tool_bronzepick.png,default/default_pick_bronze.png
+default/default_tool_steelpick.png,default/default_pick_steel.png
+default/default_tool_stonepick.png,default/default_pick_stone.png
+default/default_tool_woodpick.png,default/default_pick_wood.png
+moretrees/moretrees_birch_sapling.png,default/default_sapling_birch.png
+moretrees/moretrees_birch_sapling.png,default/default_sapling_birch_inventory.png
+default/default_sapling.png,default/default_sapling_inventory.png
+moretrees/moretrees_oak_sapling.png,default/default_sapling_oak.png
+moretrees/moretrees_oak_sapling.png,default/default_sapling_oak_inventory.png
+default/default_tool_bronzeshovel.png,default/default_shovel_bronze.png
+default/default_tool_steelshovel.png,default/default_shovel_steel.png
+default/default_tool_stoneshovel.png,default/default_shovel_stone.png
+default/default_tool_woodshovel.png,default/default_shovel_wood.png
+moretrees/moretrees_birch_trunk.png,default/default_tree_birch.png
+moretrees/moretrees_birch_trunk_top.png,default/default_tree_birch_top.png
+moretrees/moretrees_oak_trunk.png,default/default_tree_oak.png
+moretrees/moretrees_oak_trunk_top.png,default/default_tree_oak_top.png
+default/default_water_flowing_animated.png,default/default_water_animated.png
+default/default_river_water_flowing_animated.png,default/default_river_water_animated.png
+moretrees/moretrees_birch_wood.png,default/default_wood_birch.png
+moretrees/moretrees_oak_wood.png,default/default_wood_oak.png
+gui/gui_hotbar.png,ui/ui_hotbar_bg.png
+gui/gui_hotbar_selected.png,ui/ui_hotbar_selected.png
+default/default_furnace_fire_bg.png,ui/ui_fire_bg.png
+default/default_furnace_fire_fg.png,ui/ui_fire.png
+gui/gui_furnace_arrow_bg.png,ui/ui_arrow_bg.png
+gui/gui_furnace_arrow_fg.png,ui/ui_arrow.png
+
+# Repixture - door
+doors/doors_item_wood.png,door/door_wood.png
+
+# Repixture - gold
+default/default_gold_ingot.png,gold/gold_ingot_gold.png
+default/default_gold_lump.png,gold/gold_lump_gold.png
+default/default_mineral_gold.png,gold/gold_mineral_gold.png
+
+# Repixture - jewels
+default/default_wood.png,jewels/jewels_bench_bottom.png
+
+# Repixture - locks
+default/default_chest_lock.png,locks/locks_chest_front.png
+
+# Repixture - mobs
+mobs/mobs_blood.png,mobs/mobs_damage.png
+mobs/mobs_meat.png,mobs/mobs_meat_cooked.png
+wool/wool_white.png,mobs/mobs_wool.png
+
+# Repixture - nav
+map/map_mapping_kit.png,nav/nav_inventory.png
+
+# Repixture - partialblocks
+default/default_coal_block.png,partialblocks/partialblocks_block_coal_slab.png
+default/default_coal_block.png,partialblocks/partialblocks_block_coal_stair.png
+default/default_cobble.png,partialblocks/partialblocks_reinforced_cobbles_stair.png
+default/default_sandstone_block.png,default/partialblocks_compressed_sandstone_stair.png
+
+# Repixture - tnt
+tnt/tnt_side.png,tnt/tnt_sides.png
+tnt/tnt_top.png,tnt/tnt_top_disabled.png
