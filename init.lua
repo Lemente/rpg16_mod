@@ -58,7 +58,6 @@ end
 
 
 local override_table = {}
-
 local file = io.open(modpath .. "/override.txt", "r")
 
 -- Read each line of the file
@@ -105,12 +104,12 @@ local tiles_type = {
 	["wield"] = "wield_image", -- items+ nodes
 }
 local tiles_table = {
-	["left"] = 1,
-	["right"] = 2,
-	["front"] = 3,
-	["back"] = 4,
-	["top"] = 5,
-	["bottom"] = 6,
+	["left"] = 4,
+	["right"] = 3,
+	["front"] = 6,
+	["back"] = 5,
+	["top"] = 1,
+	["bottom"] = 2,
 	--["sides"] = ,
 	--["all"] = ,
 	--["*"] = ,
@@ -124,47 +123,49 @@ local tiles_table = {
 	--["wield"] = ,
 }
 for k, v in pairs(override_table) do
-	local item = k								--mod:node
-	local face = override_table[k].target_face	--node face
-	local texture = override_table[k].texture	--texture.png
-	-- TILES
-	if tiles_type[face] == "tiles" then
-		local tiles = table.copy(minetest.registered_nodes[item].tiles)
-		tiles[tiles_table[face]] = texture
-		minetest.override_item(item, { tiles = tiles })
-	-- SPECIAL_TILES
-	elseif tiles_type[face] == "special_tiles" then
-		if special_drawtype then
-			local special_tiles = table.copy(minetest.registered_nodes[item].special_tiles)
-			special_tiles[tiles_table[face]] = texture
-			minetest.override_item(item, { special_tiles = special_tiles })
-		elseif special_drawtype ~= true then
-			-- output error message?
-		end
-	--ALL, SIDES, *
-	elseif tiles_type[face] == "multiple" then
-		local tiles = table.copy(minetest.registered_nodes[item].tiles)
-		if face == "all" or face == "*" then
-			for i=6,1,-1 do
-				tiles[i] = texture
-				minetest.override_item(item, { tiles = tiles })
+	if minetest.registered_nodes[k] then
+		local item = k								--mod:node
+		local face = override_table[k].target_face	--node face
+		local texture = override_table[k].texture	--texture.png
+		-- TILES
+		if tiles_type[face] == "tiles" then
+			local tiles = table.copy(minetest.registered_nodes[item].tiles)
+			tiles[tiles_table[face]] = texture
+			minetest.override_item(item, { tiles = tiles })
+		-- SPECIAL_TILES
+		elseif tiles_type[face] == "special_tiles" then
+			if special_drawtype then
+				local special_tiles = table.copy(minetest.registered_nodes[item].special_tiles)
+				special_tiles[tiles_table[face]] = texture
+				minetest.override_item(item, { special_tiles = special_tiles })
+			elseif special_drawtype ~= true then
+				-- output error message?
 			end
-		elseif face == "sides" then
-			for i=6,3,-1 do
-				tiles[i] = texture
-				minetest.override_item(item, { tiles = tiles })
+		--ALL, SIDES, *
+		elseif tiles_type[face] == "multiple" then
+			local tiles = table.copy(minetest.registered_nodes[item].tiles)
+			if face == "all" or face == "*" then
+				for i=6,1,-1 do
+					tiles[i] = texture
+					minetest.override_item(item, { tiles = tiles })
+				end
+			elseif face == "sides" then
+				for i=6,3,-1 do
+					tiles[i] = texture
+					minetest.override_item(item, { tiles = tiles })
+				end
 			end
+		-- INVENTORY
+		elseif tiles_type[face] == "inventory" then
+			local inventory_image = table.copy(minetest.registered_nodes[item].inventory_image )
+			inventory_image[tiles_table[face]] = texture
+			minetest.override_item(item, { inventory_image = inventory_image })
+		--WIELD
+		elseif tiles_type[face] == "wield" then
+			local wield_image = table.copy(minetest.registered_nodes[item].wield_image )
+			wield_image[tiles_table[face]] = texture
+			minetest.override_item(item, { wield_image = wield_image })
 		end
-	-- INVENTORY
-	elseif tiles_type[face] == "inventory" then
-		local inventory_image = table.copy(minetest.registered_nodes[item].inventory_image )
-		inventory_image[tiles_table[face]] = texture
-		minetest.override_item(item, { inventory_image = inventory_image })
-	--WIELD
-	elseif tiles_type[face] == "wield" then
-		local wield_image = table.copy(minetest.registered_nodes[item].wield_image )
-		wield_image[tiles_table[face]] = texture
-		minetest.override_item(item, { wield_image = wield_image })
 	end
 end
 
