@@ -1,4 +1,7 @@
 ## Fork info
+
+This prototype implement the rpg16 as a mod. It also parses the override.txt file to override the nodes in Lua.
+
 Mod support:
 - cottages (partial)
 - fachwerk
