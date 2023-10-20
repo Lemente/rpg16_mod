@@ -1,6 +1,6 @@
 ## Fork info
 
-This prototype implements the rpg16 as a mod. It also parses the override.txt file to override the nodes in Lua.
+This prototype implements the rpg16 texture pack as a mod. It also parses the override.txt file to override the nodes directly in Lua.
 
 Mod support:
 - cottages (partial)
